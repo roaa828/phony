@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body{
+        font-family:"tajawal" , sans-serif;
+        background-color:white;
+        }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        max-width: 1445px;
+        height: 10vh;
+        margin:  0 auto;
+        padding: 0 5rem;
+        color: rgb(40, 117, 152);
+        background-color:rgb(193, 223, 236);
+        }
+        nav.logo i{
+            color:rgb(4, 30, 33);
+            padding-left:01,90rem;
+        }
+        nav .bars-3{
+            display: none;
+        }
+        nav.logo{
+            display: flex;
+        font-style: 2rem ;
+        align-items: center;
+        
+        }
+        nav .logo h4{
+            padding-right: 5px;
+            display: inline;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+        }
+        
+        nav .nav-items{
+        display:flex;
+        list-style-type: none;
+        }
+        nav.nav-items.nav-item {
+        padding:1rem 2rem;
+        }
+        nav .nav-link{
+        text-decoration:none;
+        color: rgb(21, 85, 104);
+        font-size: 1.2rem;
+        padding:0 2rem;
+        }
+        nav .nav-link:hover{
+        color: rgb(57, 161, 166);
+        }
+
+    /*PHONES SECTION*/
+   
+   .newest-phones{
+    padding: 5rem;
+    background-color:white;
+    }
+    .newest-phones .phone-section{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display:flex;
+    flex-direction: column;
+    }
+   
+    .newest-phones .phones{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        justify-content: flex-start;
+        }
+    .phones .phone{
+    margin: 2rem 0;
+    max-width:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    }
+    .newest-phones img{
+    margin-bottom: 1rem;
+    }
+    .newest-phones img:hover{
+    scale: 1.1;
+    cursor: pointer;
+    }
+    .newest-phones h3{
+        font-size: 17px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-right: 20px;
+    }
+    .newest-phones button h2{
+background-color: rgb(165, 214, 228);
+color: rgb(56, 79, 82);
+    }
+    .newest-phones button{
+    width: 10rem;
+    margin-bottom:5rem;
+    align-self:center;
+    }
+    a{
+        text-decoration:none;
+        color: rgb(13, 70, 78);
+  }
+     
+            .btn {
+                padding:1px;
+                width:25%;
+                font-size:15px; 
+                height: 35px; 
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background-color: rgb(165, 214, 228);
+              }
+              
+/*footer secation*/
+footer{
+    background-color: rgb(157, 194, 210);
+    height: 15vh;
+    margin-top:4rem;
+    padding: 2rem 0;
+    }
+    .footer-section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 1366px;
+    margin:0  auto;
+    padding: 0 5rem;
+    }
+    .footer-section p{
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    }
+    .footer-section .socials{
+    margin-bottom: 1rem;
+    }
+    .footer-section .socials i{
+    padding: 0 0.6rem;
+    font-size: 1.4rem;
+    }
+    .footer-section .socials i:hover{
+    color: rgb(26, 255, 255);
+    cursor: pointer;
+    }
+   /*responsive design*/
+@media (max-width:1000px){
+    *{
+      text-align: center;
+    }
+}
+@media(max-width:950px){
+    .btn {
+        align-items: center;
+        width: 100%;
+    }
+}
+@media(max-width:750px){
+    .newest-phones .phones{
+    grid-template-columns: 1fr 1fr;}
+}
+@media (max-width:660px){
+    .newest-phones{
+        align-items: center;
+    }
+
+}
+@media (max-width:500px){
+    .newest-phones .phones{
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+      nav .bars-3 {
+        display: block;
+        font-size: 3rem;
+      }
+    nav .nav-items{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(21, 85, 104);
+    padding: 2rem 0;
+    }
+    nav .nav-items.active{
+        display: flex;
+    }
+    nav .nav-items .nav-item{
+        margin: 1rem 0;
+    }
+    nav .nav-items .nav-item a{
+        color: #fdfdfd;
+    }
+}
